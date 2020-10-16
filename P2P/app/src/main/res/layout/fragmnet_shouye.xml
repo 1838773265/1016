@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#102531"
+        >
+        <TextView
+            android:text="首页"
+            android:textSize="30sp"
+            android:textColor="#26B7ED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner_shouye"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/ttv_title"
+        android:textSize="25sp"
+        android:textColor="#797474"
+        android:gravity="center"
+        android:text="硅谷彩虹新手计划"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@drawable/recommend"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:text="本息保障"
+            android:textColor="#797474"
+            android:background="@drawable/shouyesthree"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:text="每日计息"
+            android:textColor="#797474"
+            android:background="@drawable/shouyesthree"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:textSize="15sp"
+            android:text="高额收益"
+            android:textColor="#797474"
+            android:background="@drawable/shouyesthree"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/ttv_baidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#378CCF"
+            android:layout_centerInParent="true"
+            />
+
+        <com.example.p2p.myview.CircleProgressView
+            android:layout_gravity="center"
+            android:id="@+id/cirview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srp_max="100"
+            app:srp_roundColor="#378CCF"
+            app:srp_progressColor="#E4447A"
+            app:srp_roundWidth="12dp"
+            app:srp_startAngle="0"
+            app:srp_style="STROKE" ></com.example.p2p.myview.CircleProgressView>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/ttv_lilv"
+        android:text="预期年利率：8.00%"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#797474"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/home"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="立即加入"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="风险保障金由硅谷银行监管"
+        android:drawableLeft="@drawable/guarantee_icon"
+        />
+
+</LinearLayout>

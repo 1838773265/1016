@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/p2p_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:text="新手福利计划"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCC9C9"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+           android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="产品金额"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预期年利率"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="定期锁"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#f00"
+                    android:id="@+id/num1"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#f00"
+                    android:id="@+id/num2"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#f00"
+                    android:id="@+id/num3"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/product_part1_icon"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/num4"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"/>
+
+
+                <ImageView
+                    android:layout_marginLeft="45dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/product_part4_icon"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/num5"
+                    android:layout_marginRight="40dp"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"/>
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/product_part3_icon"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/num6"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <com.example.p2p.myview.CircleProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleprogress_item"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srp_max="100"
+            app:srp_progressColor="#03A9F4"
+            app:srp_roundColor="#666"
+            app:srp_roundWidth="5dp"
+
+            app:srp_startAngle="0"
+            app:srp_style="STROKE" />
+
+            <TextView
+                android:id="@+id/pro_text_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textColor="#03A9F4"
+                android:textSize="15dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/xian"
+        android:background="#03A9F4"/>
+
+
+</LinearLayout>

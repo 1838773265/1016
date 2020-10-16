@@ -1,0 +1,1 @@
+include ':app', ':lib_core', ':MPChartLib', ':gesturelock', ':GestureLock', ':GestureLock000', ':contexttest', ':contexttest000'
